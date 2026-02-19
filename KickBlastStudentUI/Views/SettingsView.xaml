@@ -1,0 +1,28 @@
+<UserControl x:Class="KickBlastStudentUI.Views.SettingsView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Grid Margin="12">
+        <Border Style="{StaticResource CardStyle}" Padding="16" Width="470" HorizontalAlignment="Left" VerticalAlignment="Top">
+            <StackPanel>
+                <TextBlock Text="Pricing Settings (LKR)" FontSize="20" FontWeight="Bold" Margin="0,0,0,12"/>
+
+                <TextBlock Text="Beginner Weekly Fee"/>
+                <TextBox Name="BeginnerTextBox" Margin="0,4,0,10"/>
+
+                <TextBlock Text="Intermediate Weekly Fee"/>
+                <TextBox Name="IntermediateTextBox" Margin="0,4,0,10"/>
+
+                <TextBlock Text="Elite Weekly Fee"/>
+                <TextBox Name="EliteTextBox" Margin="0,4,0,10"/>
+
+                <TextBlock Text="Competition Fee"/>
+                <TextBox Name="CompetitionTextBox" Margin="0,4,0,10"/>
+
+                <TextBlock Text="Coaching Hourly Rate"/>
+                <TextBox Name="CoachingTextBox" Margin="0,4,0,16"/>
+
+                <Button Content="Save Settings" Height="34" Width="140" Click="SaveSettingsButton_Click"/>
+            </StackPanel>
+        </Border>
+    </Grid>
+</UserControl>
